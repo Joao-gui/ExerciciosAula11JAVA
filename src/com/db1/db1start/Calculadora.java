@@ -26,5 +26,9 @@ public class Calculadora {
 	public int dividir() {
 		return this.numero1 / this.numero2;
 	}
+	
+	public int par() {
+		return this.numero1 % 2;
+	}
 
 }
