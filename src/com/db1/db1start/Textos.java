@@ -15,5 +15,13 @@ public class Textos {
 	public String letraMinuscula() {
 		return this.texto1.toLowerCase();
 	}
+	
+	public int numeroLetras() {
+		return this.texto1.length();
+	}
+	
+	public int numeroLetrasEspaco() {
+		return this.texto1.length();
+	}
 
 }

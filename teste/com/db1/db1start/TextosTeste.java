@@ -20,5 +20,19 @@ public class TextosTeste {
 		Assert.assertEquals("joao guilherme", texto);
 	}
 	
+	@Test
+	public void numeroLetras() {
+		Textos textos = new Textos("DB1START");
+		Integer texto = textos.numeroLetras();
+		Assert.assertEquals(8, texto, 0.001);
+	}
+	
+	@Test
+	public void numeroLetrasEspaco() {
+		Textos textos = new Textos(" DB1START ");
+		int texto = textos.numeroLetrasEspaco();
+		Assert.assertEquals(10, texto);
+	}
+	
 	
 }
