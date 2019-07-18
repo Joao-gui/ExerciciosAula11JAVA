@@ -26,5 +26,12 @@ public class CalculadoraTeste {
 		Assert.assertEquals(25, multiplicar);
 	}
 	
+	@Test
+	public void deveDividirDoisValores() {
+		Calculadora calculadora = new Calculadora(10, 2);
+		int dividir = calculadora.dividir();
+		Assert.assertEquals(5, dividir);
+	}
+	
 
 }
