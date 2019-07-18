@@ -45,5 +45,16 @@ public class CalculadoraTeste {
 		Assert.assertEquals(0, par);
 	}
 	
+	@Test
+	public void deveRetornarMaiorNumeroDeDois() {
+		int maior = calculadora.maior();
+		Assert.assertEquals(10, maior);
+	}
+	
+	@Test
+	public void deveRetornarQuantidadeDeNumerosImpares() {
+		int impares = calculadora.impares();
+		Assert.assertEquals(45, impares);
+	}
 
 }

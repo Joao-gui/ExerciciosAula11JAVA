@@ -30,5 +30,25 @@ public class Calculadora {
 	public int par() {
 		return this.numero1 % 2;
 	}
+	
+	public int maior() {
+		if (this.numero1 > this.numero2) {
+			return this.numero1;
+		}
+		else if (this.numero1 < this.numero2) {
+			return this.numero2;
+		}
+		return 0;
+	}
+	
+	public int impares() {
+		int count = 0;
+		for (int i = this.numero1; i <= 100; i++) {
+			if(i%2 != 0) {
+				count++;
+			}
+		}
+		return count;
+	}
 
 }
