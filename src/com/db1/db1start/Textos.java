@@ -23,5 +23,9 @@ public class Textos {
 	public int numeroLetrasEspaco() {
 		return this.texto1.length();
 	}
+	
+	public int numeroLetrasSemEspaco() {
+		return this.texto1.replaceAll(" ", "").length();
+	}
 
 }

@@ -34,5 +34,12 @@ public class TextosTeste {
 		Assert.assertEquals(10, texto);
 	}
 	
+	@Test
+	public void numeroLetrasSemEspaco() {
+		Textos textos = new Textos(" DB1START ");
+		int texto = textos.numeroLetrasSemEspaco();
+		Assert.assertEquals(8, texto);
+	}
+	
 	
 }
