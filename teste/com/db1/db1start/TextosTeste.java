@@ -55,5 +55,12 @@ public class TextosTeste {
 		Assert.assertEquals("erme", texto);
 	}
 	
+	@Test
+	public void substituaPrimeiroNome() {
+		Textos textos = new Textos("Joao Guilherme");
+		String texto = textos.substituiPrimeiroNome();
+		Assert.assertEquals("ALUNO Guilherme", texto);
+	}
+	
 	
 }

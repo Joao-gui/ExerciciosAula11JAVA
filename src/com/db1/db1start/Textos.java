@@ -35,5 +35,9 @@ public class Textos {
 	public String quatroUltimasLetras() {
 		return this.texto1.substring(10);
 	}
+	
+	public String substituiPrimeiroNome() {
+		return this.texto1 = this.texto1.replace("Joao", "ALUNO");
+	}
 
 }
