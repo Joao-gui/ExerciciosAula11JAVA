@@ -39,5 +39,24 @@ public class Textos {
 	public String substituiPrimeiroNome() {
 		return this.texto1 = this.texto1.replace("Joao", "ALUNO");
 	}
+	
+	public String textoSeparadamente() {
+		String linhas[] = this.texto1.split(",");
+		return linhas[0];
+	}
+	
+	public int numeroVogais() {
+		int cont = 0;
+		int i;
+		for(i = 0; i <= this.texto1.length(); i++) {
+			char c = this.texto1.charAt(i);
+			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+			{
+				cont++;
+			}
+			
+		}
+		return cont;
+	}
 
 }

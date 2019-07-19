@@ -62,5 +62,19 @@ public class TextosTeste {
 		Assert.assertEquals("ALUNO Guilherme", texto);
 	}
 	
+	@Test
+	public void textoSeparadamente() {
+		Textos textos = new Textos("banana, maçã, melancia");
+		String texto = textos.textoSeparadamente();
+		Assert.assertEquals("banana,  maçã, melancia", texto);
+	}
+	
+	@Test
+	public void numeroVogais() {
+		Textos textos = new Textos("aeious");
+		int texto = textos.numeroVogais();
+		Assert.assertEquals(5, texto);
+	}
+	
 	
 }
