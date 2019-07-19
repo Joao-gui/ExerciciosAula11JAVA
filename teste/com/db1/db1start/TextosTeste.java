@@ -48,5 +48,12 @@ public class TextosTeste {
 		Assert.assertEquals("Joao", texto);
 	}
 	
+	@Test
+	public void quatroUltimasLetras() {
+		Textos textos = new Textos("Joao Guilherme");
+		String texto = textos.quatroUltimasLetras();
+		Assert.assertEquals("erme", texto);
+	}
+	
 	
 }

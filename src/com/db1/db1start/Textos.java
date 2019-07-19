@@ -31,5 +31,9 @@ public class Textos {
 	public String quatroPrimeirasLetras() {
 		return this.texto1.substring(0, 4);
 	}
+	
+	public String quatroUltimasLetras() {
+		return this.texto1.substring(10);
+	}
 
 }
