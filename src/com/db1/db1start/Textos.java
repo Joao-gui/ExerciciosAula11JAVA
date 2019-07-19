@@ -27,5 +27,9 @@ public class Textos {
 	public int numeroLetrasSemEspaco() {
 		return this.texto1.replaceAll(" ", "").length();
 	}
+	
+	public String quatroPrimeirasLetras() {
+		return this.texto1.substring(0, 4);
+	}
 
 }

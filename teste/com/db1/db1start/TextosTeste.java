@@ -41,5 +41,12 @@ public class TextosTeste {
 		Assert.assertEquals(8, texto);
 	}
 	
+	@Test
+	public void quatroPrimeirasLetras() {
+		Textos textos = new Textos("Joao Guilherme");
+		String texto = textos.quatroPrimeirasLetras();
+		Assert.assertEquals("Joao", texto);
+	}
+	
 	
 }
