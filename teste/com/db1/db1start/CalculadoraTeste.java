@@ -63,9 +63,22 @@ public class CalculadoraTeste {
 		Assert.assertEquals(11.5, menorValor, 0.0001);
 	}
 	
-	@Test public void retornarMenorValorEntreTresDoubles() {
+	@Test 
+	public void retornarMenorValorEntreTresDoubles() {
 		double menorValor = calculadora.menorValorEntreTresDoubles();
 		Assert.assertEquals(11.5, menorValor, 0.0001);
+	}
+	
+	@Test
+	public void mediaDeTresValores() {
+		double media = calculadora.mediaDeTresValores();
+		Assert.assertEquals(19.2466, media, 0.0001);
+	}
+	
+	@Test
+	public void areaTriangulo() {
+		double area = calculadora.areaTriangulo();
+		Assert.assertEquals(100.625, area, 0.0001);
 	}
 	
 

@@ -83,5 +83,13 @@ public class Calculadora {
 		}
 		return 0;
 	}
+	
+	public double mediaDeTresValores() {
+		return (this.numero3 + this.numero4 + this.numero5) / 3;
+	}
+	
+	public double areaTriangulo() {
+		return (this.numero3 * this.numero5) / 2;
+	}
 
 }
