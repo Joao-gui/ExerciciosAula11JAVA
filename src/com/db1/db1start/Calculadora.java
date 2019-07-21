@@ -6,9 +6,19 @@ public class Calculadora {
 	
 	private int numero2;
 	
-	public Calculadora(int numero1, int numero2) {
+	private double numero3;
+	
+	private double numero4;
+	
+	private double numero5;
+	
+	
+	public Calculadora(int numero1, int numero2, double numero3, double numero4, double numero5) {
 		this.numero1 = numero1;
 		this.numero2 = numero2;
+		this.numero3 = numero3;
+		this.numero4 = numero4;
+		this.numero5 = numero5;
 	}
 	
 	public int somar() {
@@ -49,6 +59,29 @@ public class Calculadora {
 			}
 		}
 		return count;
+	}
+	
+	public double menorValorEntreDoisDoubles() {
+		if (this.numero3 < this.numero4) {
+			return this.numero3;
+		}
+		else if(this.numero4 < this.numero3) {
+			return this.numero4;
+		}
+		return 0;
+	}
+	
+	public double menorValorEntreTresDoubles() {
+		if(this.numero3 < this.numero4 && this.numero3 < this.numero5) {
+			return this.numero3;
+		}
+		else if(this.numero4 < this.numero3 && this.numero4 < this.numero5) {
+			return this.numero4;
+		}
+		else if(this.numero5 < this.numero3 && this.numero5 < this.numero4) {
+			return this.numero5;
+		}
+		return 0;
 	}
 
 }

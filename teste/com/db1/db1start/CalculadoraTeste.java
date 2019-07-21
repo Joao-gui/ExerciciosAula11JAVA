@@ -12,7 +12,7 @@ public class CalculadoraTeste {
 	//Vai rodar o Before antes de rodar o Programa
 	@Before
 	public void serUp() {
-		calculadora = new Calculadora(10, 5);
+		calculadora = new Calculadora(10, 5, 11.5, 28.74, 17.5);
 	}
 	
 	@Test
@@ -56,5 +56,17 @@ public class CalculadoraTeste {
 		int impares = calculadora.impares();
 		Assert.assertEquals(45, impares);
 	}
+	
+	@Test
+	public void retornarMenorValorEntreDoisDoubles() {
+		double menorValor = calculadora.menorValorEntreDoisDoubles();
+		Assert.assertEquals(11.5, menorValor, 0.0001);
+	}
+	
+	@Test public void retornarMenorValorEntreTresDoubles() {
+		double menorValor = calculadora.menorValorEntreTresDoubles();
+		Assert.assertEquals(11.5, menorValor, 0.0001);
+	}
+	
 
 }

@@ -2,7 +2,7 @@ package com.db1.db1start;
 
 public class Textos {
 	
-	private String texto1;	
+	private String texto1;
 	
 	public Textos (String texto1) {
 		this.texto1 = texto1;	
@@ -41,8 +41,8 @@ public class Textos {
 	}
 	
 	public String textoSeparadamente() {
-		String linhas[] = this.texto1.split(",");
-		return linhas[0];
+		this.texto1.split(",");
+		return this.texto1;
 	}
 	
 	public int numeroVogais() {

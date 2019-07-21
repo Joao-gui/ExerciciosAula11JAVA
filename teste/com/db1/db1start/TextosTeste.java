@@ -64,9 +64,9 @@ public class TextosTeste {
 	
 	@Test
 	public void textoSeparadamente() {
-		Textos textos = new Textos("banana, maçã, melancia");
+		Textos textos = new Textos("Banana, maça, melancia");
 		String texto = textos.textoSeparadamente();
-		Assert.assertEquals("banana,  maçã, melancia", texto);
+		Assert.assertEquals(textos, texto);
 	}
 	
 	@Test

@@ -7,8 +7,8 @@ public class App {
 		int tamanhoDoNome = Nome.quantidadeDeCaracteres("João Guilherme");
 		System.out.println("Tamanho do nome é: "+tamanhoDoNome);
 		
-		Calculadora calculadora = new Calculadora(10,2);
-		Calculadora calculadora2 = new Calculadora(11,15);
+		Calculadora calculadora = new Calculadora(10,2,11.5,57.1,22.41);
+		Calculadora calculadora2 = new Calculadora(11,15,54.2,18.2,63.2);
 		
 		System.out.println(calculadora.somar());
 		System.out.println(calculadora2.subtrair());
