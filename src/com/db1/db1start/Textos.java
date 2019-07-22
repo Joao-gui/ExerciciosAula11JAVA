@@ -32,6 +32,10 @@ public class Textos {
 		return this.texto1.substring(0, 4);
 	}
 	
+	public String apartirDaTerceiraLetra() {
+		return this.texto1.substring(3);
+	}
+	
 	public String quatroUltimasLetras() {
 		return this.texto1.substring(10);
 	}

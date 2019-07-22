@@ -49,6 +49,13 @@ public class TextosTeste {
 	}
 	
 	@Test
+	public void apartirDaTerceiraLetra() {
+		Textos textos = new Textos("Joao Guilherme");
+		String texto = textos.apartirDaTerceiraLetra();
+		Assert.assertEquals("o Guilherme", texto);
+	}
+	
+	@Test
 	public void quatroUltimasLetras() {
 		Textos textos = new Textos("Joao Guilherme");
 		String texto = textos.quatroUltimasLetras();
