@@ -40,9 +40,9 @@ public class Textos {
 		return this.texto1 = this.texto1.replace("Joao", "ALUNO");
 	}
 	
-	public String textoSeparadamente() {
-		this.texto1.split(",");
-		return this.texto1;
+	public String[] textoSeparadamente() {
+		String[] arreyString = this.texto1.split(",");
+		return arreyString;
 	}
 	
 	public int numeroVogais() {

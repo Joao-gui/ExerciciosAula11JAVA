@@ -65,8 +65,9 @@ public class TextosTeste {
 	@Test
 	public void textoSeparadamente() {
 		Textos textos = new Textos("Banana, maça, melancia");
-		String texto = textos.textoSeparadamente();
-		Assert.assertEquals(textos, texto);
+		String[] arreyString = textos.textoSeparadamente();
+		String[] esperado = {"Banana", " maça", " melancia"};
+		Assert.assertArrayEquals(esperado, arreyString);
 	}
 	
 	@Test
