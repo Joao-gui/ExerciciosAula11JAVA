@@ -47,8 +47,8 @@ public class Textos {
 	
 	public int numeroVogais() {
 		int cont = 0;
-		int i;
-		for(i = 0; i <= this.texto1.length(); i++) {
+		int i = 0;
+		for(i = 0; i <= this.texto1.length() - 1; i++) {
 			char c = this.texto1.charAt(i);
 			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
 			{
@@ -57,6 +57,10 @@ public class Textos {
 			
 		}
 		return cont;
+	}
+	
+	public String textoInvertido() {
+		return this.texto1 = new StringBuilder(texto1).reverse().toString();
 	}
 
 }

@@ -72,9 +72,16 @@ public class TextosTeste {
 	
 	@Test
 	public void numeroVogais() {
-		Textos textos = new Textos("aeious");
+		Textos textos = new Textos("aeis");
 		int texto = textos.numeroVogais();
-		Assert.assertEquals(5, texto);
+		Assert.assertEquals(3, texto);
+	}
+	
+	@Test
+	public void textoInvertido() {
+		Textos textos = new Textos("Joao");
+		String texto = textos.textoInvertido();
+		Assert.assertEquals("oaoJ", texto);
 	}
 	
 	
