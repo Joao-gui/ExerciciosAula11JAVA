@@ -14,5 +14,13 @@ public class TextoList {
 		cores.add("Verde");
 		return cores;
 	}
+	
+	public int itens(){
+		List<String> itens = new ArrayList<String>();
+		itens.add("Caneta");
+		itens.add("Lapis");
+		itens.add("Borracha");
+		return itens.size();
+	}
 
 }

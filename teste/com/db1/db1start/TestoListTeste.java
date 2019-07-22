@@ -23,5 +23,14 @@ public class TestoListTeste {
 		Assert.assertTrue(cor.contains("Branco"));
 		Assert.assertTrue(cor.contains("Verde"));		
 	}
+	
+	@Test
+	public void deveRetornarAQuantidadeDeItens() {
+		TextoList itens = new TextoList();
+		int iten = itens.itens();
+		
+		Assert.assertEquals(3, iten);
+		
+	}
 
 }
