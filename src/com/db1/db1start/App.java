@@ -1,9 +1,42 @@
 package com.db1.db1start;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
 	
 	public static void main(String[] args)
 	{
+		
+		List<String> nomes = new ArrayList<String>();
+		
+		nomes.add("João");
+		nomes.add("Maiko");
+		nomes.add("Maria");
+		
+		System.out.println(nomes);
+		
+		nomes.remove("João");
+		
+		System.out.println(nomes);
+		
+		nomes.add("Fernando");
+		
+		System.out.println(nomes);
+		
+		for(String nome : nomes) {
+			System.out.println(nome);
+		}
+		
+		List<Integer> numeros = new ArrayList<>();
+		
+		numeros.add(2);
+		numeros.add(4);
+		
+		System.out.println(numeros);
+		
+		
+		
 		int tamanhoDoNome = Nome.quantidadeDeCaracteres("João Guilherme");
 		System.out.println("Tamanho do nome é: "+tamanhoDoNome);
 		
