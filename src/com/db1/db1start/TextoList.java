@@ -159,5 +159,31 @@ public class TextoList {
 		media = soma/cont;
 		return media;
 	}
+	
+	public Integer menorValorInteger() {
+		List<Integer> numeros = new ArrayList<Integer>();
+				
+		numeros.add(2);
+		numeros.add(4);
+		numeros.add(1);
+		numeros.add(5);
+		
+		int menor = Collections.min(numeros);
+		
+		return menor;
+	}
+	
+	public Integer maiorValorInteger() {
+		List<Integer> numeros = new ArrayList<Integer>();
+		
+		numeros.add(2);
+		numeros.add(4);
+		numeros.add(1);
+		numeros.add(5);
+		
+		int maior = Collections.max(numeros);
+		
+		return maior;		
+	}
 
 }

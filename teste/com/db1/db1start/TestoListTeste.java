@@ -129,5 +129,21 @@ public class TestoListTeste {
 		
 		Assert.assertEquals(13.5666, media, 0.0001);
 	}
+	
+	@Test
+	public void deveRetornarOMenorValorInteiro() {
+		TextoList numeros = new TextoList();
+		int menor = numeros.menorValorInteger();
+		
+		Assert.assertEquals(1, menor);
+	}
+	
+	@Test
+	public void deveRetornarOMaiorValorInteiro() {
+		TextoList numeros = new TextoList();
+		int maior = numeros.maiorValorInteger();
+		
+		Assert.assertEquals(5, maior);
+	}
 
 }
