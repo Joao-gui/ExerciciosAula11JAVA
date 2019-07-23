@@ -74,5 +74,29 @@ public class TestoListTeste {
 		Assert.assertTrue(novasCores.contains("Azul"));
 		Assert.assertTrue(novasCores.contains("Verde"));
 	}
+	
+	@Test
+	public void deveRetornarOrdenadoFormaDecrescente() {
+		TextoList decrescente = new TextoList();
+		List<String> dec = decrescente.stringDecrescente();
+		
+		Assert.assertEquals(3, dec.size());
+		Assert.assertEquals("Verde", dec.get(0));
+		Assert.assertEquals("Branco", dec.get(1));
+		Assert.assertEquals("Azul", dec.get(2));
+		
+		Assert.assertTrue(dec.contains("Verde"));
+		Assert.assertTrue(dec.contains("Branco"));
+		Assert.assertTrue(dec.contains("Azul"));
+		
+	}
+	
+	@Test
+	public void deveRetornarPareImpar() {
+		TextoList numeros = new TextoList();
+		List<List<Integer>> num = numeros.numerosInteiros();
+		
+		Assert.assertEquals(, num);
+	}
 
 }

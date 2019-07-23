@@ -52,5 +52,35 @@ public class TextoList {
 		cores.remove("Branco");
 		return cores;
 	}
+	
+	public List<String> stringDecrescente(){
+		List<String> decrescente = new ArrayList<String>();
+		decrescente.add("Azul");
+		decrescente.add("Branco");
+		decrescente.add("Verde");
+		for(int i = decrescente.size() - 1; i < 0; i--) {
+			decrescente.get(i);
+		}
+		return decrescente;
+		
+	}
+	
+	public List<List<Integer>> numerosInteiros(){
+		List<Integer> numeros = new ArrayList<Integer>();
+		List<List<Integer>> todosOsNumeros = new ArrayList<List<Integer>>();
+		List<Integer> numerosPares = new ArrayList<Integer>();
+		
+		numerosPares.add(2);
+		numerosPares.add(4);
+		
+		numeros.add(1);
+		numeros.add(2);
+		numeros.add(3);
+		numeros.add(4);
+		todosOsNumeros.add(numeros);
+		todosOsNumeros.add(numerosPares);
+		
+		return todosOsNumeros;
+	}
 
 }
