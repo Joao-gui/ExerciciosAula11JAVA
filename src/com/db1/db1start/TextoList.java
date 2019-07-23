@@ -1,6 +1,8 @@
 package com.db1.db1start;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -58,11 +60,8 @@ public class TextoList {
 		decrescente.add("Azul");
 		decrescente.add("Branco");
 		decrescente.add("Verde");
-		for(int i = decrescente.size() - 1; i < 0; i--) {
-			decrescente.get(i);
-		}
+		Collections.sort(decrescente, Collections.reverseOrder());		
 		return decrescente;
-		
 	}
 	
 	public List<List<Integer>> numerosInteiros(){
