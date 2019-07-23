@@ -43,5 +43,14 @@ public class TextoList {
 		}
 		return nomes;
 	}
+	
+	public List<String> nomesCoresERemover(){
+		List<String> cores = new ArrayList<String>();
+		cores.add("Azul");
+		cores.add("Branco");
+		cores.add("Verde");
+		cores.remove("Branco");
+		return cores;
+	}
 
 }

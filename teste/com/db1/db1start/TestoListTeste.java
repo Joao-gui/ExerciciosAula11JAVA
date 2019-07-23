@@ -61,5 +61,18 @@ public class TestoListTeste {
 		Assert.assertTrue(novoNome.contains("Branco"));
 		Assert.assertTrue(novoNome.contains("Verde"));
 	}
+	
+	@Test
+	public void deveRetornarAsCoresERemoverUma() {
+		TextoList cores = new TextoList();
+		List<String> novasCores = cores.nomesCoresERemover();
+		
+		Assert.assertEquals(2, novasCores.size());
+		Assert.assertEquals("Azul", novasCores.get(0));
+		Assert.assertEquals("Verde", novasCores.get(1));
+		
+		Assert.assertTrue(novasCores.contains("Azul"));
+		Assert.assertTrue(novasCores.contains("Verde"));
+	}
 
 }
