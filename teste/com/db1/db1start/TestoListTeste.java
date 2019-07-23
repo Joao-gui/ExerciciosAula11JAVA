@@ -32,5 +32,19 @@ public class TestoListTeste {
 		Assert.assertEquals(3, iten);
 		
 	}
+	
+	@Test
+	public void deveRemoverOValorDaSegundaPosicao() {
+		TextoList remova = new TextoList();
+		List<String> remocao = remova.remova();
+		
+		Assert.assertEquals(2, remocao.size());
+		Assert.assertEquals("Joao", remocao.get(0));
+		Assert.assertEquals("Maria", remocao.get(1));
+		
+		Assert.assertTrue(remocao.contains("Joao"));
+		Assert.assertTrue(remocao.contains("Maria"));
+		
+	}
 
 }

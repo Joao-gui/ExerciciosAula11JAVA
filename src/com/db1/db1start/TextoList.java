@@ -22,5 +22,14 @@ public class TextoList {
 		itens.add("Borracha");
 		return itens.size();
 	}
+	
+	public List<String> remova(){
+		List<String> remova = new ArrayList<String>();
+		remova.add("Joao");
+		remova.add("Maria");
+		remova.add("Ana");
+		remova.remove(2);
+		return remova;
+	}
 
 }
