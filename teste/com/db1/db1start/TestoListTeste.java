@@ -46,5 +46,20 @@ public class TestoListTeste {
 		Assert.assertTrue(remocao.contains("Maria"));
 		
 	}
+	
+	@Test
+	public void deveRetornarNomesDasCores() {
+		TextoList nomes = new TextoList();
+		List<String> novoNome = nomes.nomesCoresOrdenado();
+		
+		Assert.assertEquals(3, novoNome.size());
+		Assert.assertEquals("Azul", novoNome.get(0) );
+		Assert.assertEquals("Branco", novoNome.get(1));
+		Assert.assertEquals("Verde", novoNome.get(2));
+		
+		Assert.assertTrue(novoNome.contains("Azul"));
+		Assert.assertTrue(novoNome.contains("Branco"));
+		Assert.assertTrue(novoNome.contains("Verde"));
+	}
 
 }

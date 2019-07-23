@@ -3,6 +3,7 @@ package com.db1.db1start;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class TextoList {
 	
 	
@@ -30,6 +31,17 @@ public class TextoList {
 		remova.add("Ana");
 		remova.remove(2);
 		return remova;
+	}
+	
+	public List<String> nomesCoresOrdenado(){
+		List<String> nomes = new ArrayList<String>();
+		nomes.add("Azul");
+		nomes.add("Branco");
+		nomes.add("Verde");
+		for(int i=0; i <= nomes.size() - 1; i++) {
+			nomes.get(i);
+		}
+		return nomes;
 	}
 
 }
