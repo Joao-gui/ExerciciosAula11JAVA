@@ -94,9 +94,24 @@ public class TestoListTeste {
 	@Test
 	public void deveRetornarPareImpar() {
 		TextoList numeros = new TextoList();
-		List<List<Integer>> num = numeros.numerosInteiros();
+		List<List<Integer>> imparesPares = numeros.numerosInteiros();
+		int numerosPares[] = {2, 4};
+		int numerosImpares[] = {1, 3};
+		int todosOsNumeros[] = {1, 2, 3, 4};
 		
-		Assert.assertEquals(, num);
+		Assert.assertEquals(3, imparesPares.size());
+		Assert.assertEquals(todosOsNumeros, imparesPares.get(0));
+		Assert.assertEquals(numerosPares, imparesPares.get(1));
+		Assert.assertEquals(numerosImpares, imparesPares.get(2));		
+	}
+	
+	@Test
+	public void deveRetornarListaDeNomesOrdenados() {
+		TextoList nomes = new TextoList();
+		List<List<String>> todosOsNomes = nomes.nomesOrdenados();
+		
+		Assert.assertEquals(7, todosOsNomes.size());
+		
 	}
 
 }
