@@ -113,5 +113,21 @@ public class TestoListTeste {
 		Assert.assertEquals(7, todosOsNomes.size());
 		
 	}
+	
+	@Test
+	public void deveRetornarSomaDeUmaListaDeInteiros() {
+		TextoList numeros = new TextoList();
+		int soma = numeros.somaDeInteiros();
+		
+		Assert.assertEquals(8, soma);
+	}
+	
+	@Test
+	public void deveRetornarAMediaDeUmaListaDeDoubles() {
+		TextoList numeros = new TextoList();
+		double media = numeros.mediaDeDoubles();
+		
+		Assert.assertEquals(13.5666, media, 0.0001);
+	}
 
 }

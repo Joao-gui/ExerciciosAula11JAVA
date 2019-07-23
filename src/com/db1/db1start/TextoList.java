@@ -129,5 +129,35 @@ public class TextoList {
 		return todosOsNomes;
 		
 	}
+	
+	public Integer somaDeInteiros(){
+		List<Integer> numeros = new ArrayList<Integer>();
+		int soma = 0;
+		numeros.add(1);
+		numeros.add(2);
+		numeros.add(5);
+		
+		for(int i = 0; i <= numeros.size() - 1; i++) {
+			soma = numeros.get(i) + soma;
+		}
+		return soma;		
+	}
+	
+	public Double mediaDeDoubles() {
+		List<Double> numeros = new ArrayList<Double>();
+		double media = 0;
+		double soma = 0;
+		int cont = 0;
+		numeros.add(11.5);
+		numeros.add(25.5);
+		numeros.add(3.7);
+		
+		for(int i=0; i<=numeros.size() - 1; i++) {
+			soma = numeros.get(i) + soma;
+			cont++;
+		}
+		media = soma/cont;
+		return media;
+	}
 
 }
