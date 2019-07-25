@@ -208,20 +208,18 @@ public class TextoList {
 		List<String> vogais = new ArrayList<String>();
 		
 		String frase = ("DB1 Start");
-		char vogal;
+		char c;
 		
 		for(int i = 0; i <= frase.length() - 1; i++) {
-			char c = frase.charAt(i);
+			c = frase.charAt(i);
 			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
 			{
-				vogal = frase.charAt(c);
-				vogais.add(new StringBuilder(vogal).toString());
+				String x = String.valueOf(c);
+				vogais.add(x);
 			}
 			
 		}
-		return vogais;
-		
-		
+		return vogais;		
 	}
 
 }
