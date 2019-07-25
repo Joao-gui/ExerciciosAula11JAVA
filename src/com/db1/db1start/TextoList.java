@@ -185,5 +185,43 @@ public class TextoList {
 		
 		return maior;		
 	}
+	
+	public List<Integer> removaOsImpares() {
+		List<Integer> numeros = new ArrayList<Integer>();
+		
+		numeros.add(0);
+		numeros.add(1);
+		numeros.add(2);
+		numeros.add(3);
+		numeros.add(4);
+		
+		for(int i = 0; i <= numeros.size() - 1; i++) {
+			if(numeros.get(i)%2 != 0) {
+				numeros.remove(i);
+			}
+		}
+		return numeros;
+	}
+	
+	public List<String> fraseRetornaVogais(){
+		
+		List<String> vogais = new ArrayList<String>();
+		
+		String frase = ("DB1 Start");
+		char vogal;
+		
+		for(int i = 0; i <= frase.length() - 1; i++) {
+			char c = frase.charAt(i);
+			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+			{
+				vogal = frase.charAt(c);
+				vogais.add(new StringBuilder(vogal).toString());
+			}
+			
+		}
+		return vogais;
+		
+		
+	}
 
 }

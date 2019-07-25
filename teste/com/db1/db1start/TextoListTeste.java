@@ -1,5 +1,6 @@
 package com.db1.db1start;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
@@ -7,7 +8,7 @@ import org.junit.Test;
 
 
 
-public class TestoListTeste {
+public class TextoListTeste {
 	
 	@Test
 	public void deveRetornarCores() {
@@ -95,9 +96,20 @@ public class TestoListTeste {
 	public void deveRetornarPareImpar() {
 		TextoList numeros = new TextoList();
 		List<List<Integer>> imparesPares = numeros.numerosInteiros();
-		int numerosPares[] = {2, 4};
-		int numerosImpares[] = {1, 3};
-		int todosOsNumeros[] = {1, 2, 3, 4};
+		List<Integer> numerosPares = new ArrayList<Integer>();
+		List<Integer> numerosImpares = new ArrayList<Integer>();
+		List<Integer> todosOsNumeros = new ArrayList<Integer>();
+		
+		numerosPares.add(2);
+		numerosPares.add(4);
+		
+		numerosImpares.add(1);
+		numerosImpares.add(3);
+		
+		todosOsNumeros.add(1);
+		todosOsNumeros.add(2);
+		todosOsNumeros.add(3);
+		todosOsNumeros.add(4);		
 		
 		Assert.assertEquals(3, imparesPares.size());
 		Assert.assertEquals(todosOsNumeros, imparesPares.get(0));
@@ -144,6 +156,28 @@ public class TestoListTeste {
 		int maior = numeros.maiorValorInteger();
 		
 		Assert.assertEquals(5, maior);
+	}
+	
+	@Test
+	public void deveRemoverOsImpares() {
+		TextoList numeros = new TextoList();
+		List<Integer> impares = numeros.removaOsImpares();
+		List<Integer> esperado = new ArrayList<Integer>();
+		
+		esperado.add(0);
+		esperado.add(2);
+		esperado.add(4);
+		
+		Assert.assertEquals(esperado, impares);
+	}
+	
+	@Test
+	public void deveRetornarVogais() {
+		TextoList texto = new TextoList();
+		List<String> vogais = texto.fraseRetornaVogais();
+		
+		Assert.assertEquals(1, vogais.size());
+		Assert.assertEquals("a", vogais.get(0));
 	}
 
 }
